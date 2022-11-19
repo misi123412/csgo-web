@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Fegyverek | CS:GO</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/nav.min.css">
+    <link rel="stylesheet" href="/styles/load.min.css">
+    <link rel="stylesheet" href="/styles/weapons.min.css">
+</head>
+<body>
+    <div class="main-round"></div>
+    <div class="rounds">
+        <div class="round r-1"></div>
+        <div class="round r-2"></div>
+        <div class="round r-3"></div>
+        <div class="round r-4"></div>
+    </div>
+
+    <div class="rounds-2">
+        <div class="round r-5"></div>
+        <div class="round r-6"></div>
+        <div class="round r-7"></div>
+        <div class="round r-8"></div>
+    </div>
+
+    <div class="container">
+        <nav class="nav nav-animation">
+            <ul class="nav-item">
+                <a id="nav-1" href="/static/static/index.html">Kezdőlap</a>
+                <div class="background"></div>
+            </ul>
+            <ul class="nav-item">
+                <a id="nav-2" href="/static/static/weapons.html">Bemutatás</a>
+                <div class="background"></div>
+            </ul>
+            <ul class="nav-item">
+                <a id="nav-3" href="#">Fegyverek</a>
+                <div class="background active"></div>
+            </ul>
+
+        </nav>
+
+        
+
+
+
+        <div class="sub-container">
+            <div class="items">
+                <h3>AK-47</h3>
+                <img class="item-pic" src="/asiimov_ak.png" alt="asiimov_ak">
+                <p>Sebzés: </p>
+                <p>Ár: </p>
+            </div>
+            <div class="items focus">
+                <h3>AWP</h3>
+                <img class="item-pic" src="/asiimov_awp.png" alt="asiimov_awp">
+                <p>Sebzés: </p>
+                <p>Ár: $4750</p>
+            </div>
+            <div class="items">
+                <h3>M4A1-S</h3>
+                <img class="item-pic" src="/peacekeeper-cutout.png" alt="peacekeeper_m4a1-s">
+                <p>Sebzés: </p>
+                <p>Ár: </p>
+            </div>
+        </div>
+
+
+        <button class="btn" id="prev_btn" onclick="next()">ELŐZŐ</button>
+        <button class="btn" id="next_btn" onclick="prev()">KÖVETKEZŐ</button>
+    </div>
+</body>
+<script src="/js/app.js"></script>
+<script src="/js/nav.animation.js"></script>
+<script src="/js/weapons-menu.js"></script>
+</html>

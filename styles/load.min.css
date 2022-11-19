@@ -1,0 +1,116 @@
+
+:root {
+    --bg : #000;
+    --main: rgb(255,0,0);
+    --white: #fff;
+}
+
+/*@keyframes load_ak {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(720deg);
+    }
+}*/
+
+
+@keyframes shoot_awp {
+    0% {
+        left: 560px;
+        
+    }
+
+    100% {
+        left: -100px;
+    }
+
+}
+
+@keyframes recoil {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    5% {
+        transform: rotateZ(10deg);
+    }
+
+    10% {
+
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+@keyframes container_animation {
+    0% {
+        opacity: 1;
+        z-index: 1000000;
+    }
+
+    90%{
+        opacity: 1;
+        z-index: 1000000;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -100000;
+        display: none;
+    }
+}
+
+
+
+
+.animation-container {
+   position: fixed;
+   background-color: var(--bg);
+   height: 100%;
+   width:100%;
+   top: 0;
+   left:0;
+   opacity: 0;
+   z-index: -1000000;
+
+   animation: container_animation 2s;
+}
+
+.animation-container img {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    z-index: -99;
+    animation: recoil 2s;
+}
+
+
+.rn {
+    width: 30px;
+    height: 10px;
+    background-color: var(--white);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    top: 342px;
+    left: 965px;
+    z-index: -100;
+    animation: shoot_awp 2s;
+}
+
+
+
+.load_animation {
+    animation: load_awp 1s;
+}
+
+
+
+
