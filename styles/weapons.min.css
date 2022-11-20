@@ -176,6 +176,28 @@
     margin: 35px; 
 }
 
+.items:hover p{
+    cursor: pointer;
+    display: block;
+    transition: 2s ease-out;
+    animation: hover_animation .5s;
+}
+
+.items:hover {
+    transform: scale(1.2);
+    transition: .5s ease-out;
+}
+
+@keyframes hover_animation {
+    0% {
+        top: -1300px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
 .items h3, 
 .items p {
     color: var(--white);
@@ -190,7 +212,12 @@
 .items p {
     font-size: 1.4rem;
     margin-top: 10px;
+    display: none;
+    position: relative;
+    left: 0px;
 }
+
+
 
 .item-pic {
     width: 350px;
@@ -203,7 +230,7 @@
 
 .item-pic:hover {
     transform: scale(1.2) rotateZ(5deg);
-    transition: .1s;
+    transition: .5s;
 }
 
 .sub-container {
@@ -213,12 +240,12 @@
     width: 100%;
 }
 
-.focus {
+/*.focus {
     width: 450px;
     height: 600px;
     position: relative;
     top: -75px;
-}
+}*/
 
 .btn {
     position: absolute;
