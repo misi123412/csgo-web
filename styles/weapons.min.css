@@ -51,19 +51,7 @@
     100% {
         background-image: linear-gradient(to left, #0000,#ffff);
     }
-}
-
-@keyframes image_animation {
-    0% {
-        width: 1000px;
-        top: -1000px;
-    }
-
-    100% {
-        width: 350px;
-        top: 70px;
-    }
-}
+}í 
 
 .round {
     background-color: var(--white);

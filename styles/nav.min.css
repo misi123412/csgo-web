@@ -69,7 +69,14 @@ nav a {
     font-size: 1.3rem;
     margin: 0px 100px;
     padding: 20px 0px;
+    border-bottom: 1px solid transparent;
 }   
+
+a:hover {
+    border-bottom: 1px solid var(--main);
+    transition: linear .4s;
+}
+
 
 
 .background {
@@ -79,7 +86,7 @@ nav a {
     position: relative;
     z-index: -1000;
     top: -150px;
-    left: 30px;
+    left: 33px;
     border-radius: 50%;
     display: none;
     animation: link_hover 1s;
@@ -96,5 +103,7 @@ ul .nav-item {
 ul .nav-item:hover {
     border-bottom: 1px solid var(--white);
 }
+
+
 
 
