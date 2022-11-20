@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="balls">
+        <div class="ball b-1"></div>
+        <div class="ball b-2"></div>
+        <div class="ball b-3"></div>
+        <div class="ball b-4"></div>
+        <div class="ball b-5"></div>
+        <div class="ball b-6"></div>
+        <div class="ball b-7"></div>
+        <div class="ball b-8"></div>
+        <div class="ball b-9"></div>
+        <div class="ball b-10"></div>
+    </div>
+</body>
+
+<style>
+
+    
+    :root {
+        --bg: #000;
+        --main: rgb(255,0,0);
+        --white: #ffff;
+    }
+
+    body {
+        background-color: var(--bg);
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--white);
+        margin: 0px 5px;
+        opacity: .1;
+    }
+
+    .balls {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 600px;
+        height: 50px;
+    }
+
+    .b-1 {
+        animation: ball_load 4s;
+    }
+
+    .b-2 {
+        animation: ball_load1 4s;
+    }
+
+    .b-3 {
+        animation: ball_load2 4s;
+    }
+
+    .b-4 {
+        animation: ball_load3 4s;
+    }
+
+    .b-5 {
+        animation: ball_load4 4s;
+    }
+
+    .b-6 {
+        animation: ball_load5 4s;
+    }
+
+    .b-7 {
+        animation: ball_load6 4s;
+    }
+
+    .b-8 {
+        animation: ball_load7 4s;
+    }
+
+    .b-9 {
+        animation: ball_load8 4s;
+    }
+
+    .b-10 {
+        animation: ball_load9 4s;
+    }
+
+    @keyframes ball_load {
+        0% {
+            opacity: 1;
+        }
+
+
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes ball_load1 {
+        0% {
+            opacity: .1;
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes ball_load2 {
+        0% {
+            opacity: .1;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes ball_load3 {
+        0% {
+            opacity: .1;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes ball_load4 {
+        0% {
+            opacity: .1;
+        }
+
+        40% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes ball_load5 {
+        0% {
+            opacity: .1;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes ball_load6 {
+        0% {
+            opacity: .1;
+        }
+
+        60% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes ball_load7 {
+        0%{
+            opacity: .1;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes ball_load8 {
+        0%{
+            opacity: .1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes ball_load9 {
+        0%{
+            opacity: .1;
+        }
+
+        90% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+
+</style>
+<script>
+
+</script>
+</html>
