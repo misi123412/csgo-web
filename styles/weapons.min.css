@@ -51,7 +51,7 @@
     100% {
         background-image: linear-gradient(to left, #0000,#ffff);
     }
-}í 
+}
 
 .round {
     background-color: var(--white);
@@ -276,4 +276,65 @@
     color: var(--bg);
     border: 1px solid var(--bg);
     background-color: var(--white);
+}
+
+
+.tate {
+    position: fixed;
+    right: -10px;
+    bottom: -100px;
+    transform: rotateY(180deg);
+    animation: tate 2s;
+}
+
+.items:hover .viktor {
+    display: block;
+}
+
+.viktor {
+    width: 500px;
+    position: fixed;
+    top: 10px;
+    right: -50px;
+    transform: rotateZ(-45deg);
+    animation-delay: 1s;
+    animation: viktor 3s;
+}
+
+@keyframes viktor {
+    0% {
+        right: -300px;
+
+    }
+
+    20% {
+        right: -50px;
+    }
+
+    40% {
+        right: -300px;
+    }
+
+    60% {
+        right: -50px
+    }
+
+    80% {
+        right: -300px;
+    }
+
+    100% {
+        right: -50px;
+    }
+}
+@keyframes tate {
+    0% {
+        right: -300px;
+        bottom: -400px;
+    }
+
+    100% {
+        right: -10px;
+        bottom: -100px;
+    }
 }

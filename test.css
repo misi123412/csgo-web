@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,300;1,400&display=swap');
+
 
 :root {
     --bg: #000;
@@ -8,6 +11,30 @@
 body {
     background-color: var(--bg);
 }
+
+.viktor {
+    position: fixed;
+    top: 12%;
+    width: 30%;
+    left: -570px;
+    animation: viktor 8s;
+}
+
+
+@keyframes viktor {
+    0% {
+        /*left: -70px;*/
+        left: -300px;
+        top: -100px;
+    }
+
+    100% {
+        /*left: 1500px;*/
+        left: 1920px;
+        top: 1080px;
+    }
+}
+
 
 .loader {
     position: absolute;
@@ -27,9 +54,14 @@ body {
     height: 30px;
     background-color: var(--white);
     animation: loadline_animation 2s ease-out;
-    animation-delay: 1s;
 }
 
+.tate {
+    position: fixed;
+    left: 10px;
+    bottom: 30px;
+}
+/*
 .ball {
     width: 50px;
     height: 50px;
@@ -40,6 +72,8 @@ body {
 
 .balls {
     position: absolute;
+    top: 200px;
+    left: 35%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -49,45 +83,57 @@ body {
 }
 
 .b-1 {
-    opacity: 1;
+    opacity: 0.1;
+    animation: _1 1s;
+    
 }
 
 .b-2 {
-    opacity: .9;
+    opacity: 0.1;
+    animation-delay: 1s;
+    animation: _1 1s;
 }
 
 .b-3 {
-    opacity: .8;
+    opacity: 0.1;
+    animation-delay: 2s;
+    animation: _1 1s;
 }
 
 .b-4 {
-    opacity: .7;
+    opacity: 0.1;
+    animation-delay: 3s;
+    animation: _1 1s;
 }
 
 .b-5 {
-    opacity: .6;
+    opacity: 0.1;
+    animation-delay: 4s;
+    animation: _1 1s;
 }
 
 .b-6 {
-    opacity: .5;
+    opacity: 0.1;
+    animation-delay: 5s;
+    animation: _1 1s;
 }
 
 .b-7 {
-    opacity: .4;
+    opacity: 0.1;
 }
 
 .b-8 {
-    opacity: .3;
+    opacity: 0.1;
 }
 
 .b-9 {
-    opacity: .2;
+    opacity: 0.1;
 }
 
 .b-10 {
-    opacity: .1;
+    opacity: 0.1;
 }
-
+*/
 @keyframes loadline_animation {
     0% {
         width: 0px;
@@ -111,8 +157,67 @@ body {
 }
 
 
+@keyframes _1 {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#virus {
+    color: rgb(0,255,0);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 100px;
+    text-align: center;
+    opacity: 0;
+    animation-delay: 3s;
+    animation: virus 2.2s;
+}
 
 
+@keyframes virus {
+    0% {
+        opacity: 1;
+    }
 
+    10% {
+        opacity: .1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: .1;
+    }
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .1;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: .1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
 
 
