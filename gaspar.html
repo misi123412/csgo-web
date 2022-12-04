@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/gaspar.css">
+</head>
+<body>
+    <img class="tate" src="/gaspar/tate_mod.png" alt="">
+    <img class="ogli" src="/gaspar/ogli_mod.png" alt="">
+    <img class="gaspar" src="/gaspar/gaspar-cutout2.png" alt="">
+    <img class="gaspar_security" src="/gaspar/gasparsecurity.png" alt="">
+    <audio autoplay controls>
+        <source src="/gaspar/szeretetel.mp3" type="audio/mpeg">
+    </audio>
+        
+</body>
+<style>
+
+    audio {
+        position: fixed;
+        top: -100px;
+        left: -100px;
+    }
+
+    body {
+        background-color: black;
+    }
+
+
+    .tate {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+    }
+    
+    .ogli {
+        position: absolute;
+        top: 200px;
+        right: 200px;
+        transform: rotateY(180deg) scale(2);
+    }
+
+
+    .gaspar {
+        position: absolute;
+        top: 200px;
+        left: 850px;
+    }
+
+    .gaspar_security {
+        position: absolute;
+        top: 305px;
+        left: 935px;
+        animation: gaspar_animation 2s;
+    }
+
+    @keyframes gaspar_animation {
+        0% {
+            top: 315px;
+        }
+
+        10% {
+            top: 305px;
+        }
+
+        40% {
+            top: 305px;
+        }
+
+        50% {
+
+            top: 315px;
+        }
+
+        70% {
+            top: 305px;
+        }
+
+        90% {
+            top: 315px;
+        }
+
+        100% {
+            top: 305px;
+        }
+    }
+
+</style>
+</html>

@@ -9,6 +9,7 @@
 :root {
     --bg : #000;
     --main: rgb(255,0,0);
+    --white: #ffff;
 }
 
 body {
@@ -16,6 +17,87 @@ body {
     font-family: 'Roboto','sans-serif';
     
 }
+
+.text {
+    position: relative;
+    width: 70%;
+    left: 15%;
+    margin-top: 20px;
+}
+
+.text h3 {
+    color: var(--white);
+    border-bottom: 1px solid var(--main);
+    padding: 5px;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.text p {
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.footer p {
+    color: var(--white) ;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.twitch_title a {
+    color: var(--main);
+    text-decoration: none;
+    margin: 40px 0px;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.twitch_title a:hover {
+    border: 1px solid var(--main);
+    box-shadow: inset 700px 0 0 0 var(--main);
+    color: var(--white);
+}
+
+.twitch_title {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.twitch {
+    text-align: center;
+}
+
+.carousel-container img {
+    width: 70%;
+    left: 15%;
+    position: relative;
+    opacity: .7;
+}
+
+.carousel-container {
+    position: absolute;
+    top: 200px;
+}
+
+.carousel-container a {
+    position: relative;
+    top: -500px;
+    left: -900px;
+    font-size: 2rem;
+    color: var(--main);
+    background-color: var(--white);
+    text-decoration: none;
+    padding: 20px 40px;
+}
+
+.carousel-container a:hover {
+    border: none;
+}
+
 
 
 
